@@ -1,0 +1,62 @@
+.submit-banner{
+   /* max-width: 80%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   /* justify-self: center; */
+    gap: 16px;
+    margin-top: 24px;
+    padding: 16px 24px;
+    border-radius: 14px;
+    background-color: #e0e7ff;
+    border: 1px solid #c7d2fe;
+}
+
+.left-side-panel{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.rocket-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4f46e5;
+    flex-shrink: 0;
+}
+.next-step-title{
+    margin: 0 0 2px;
+    font-size: 0.98rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.submit-cv-text{
+    margin: 0;
+    font-size: 0.85rem;
+    color: #475569;
+}
+
+.cv-submit-footer{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 20px;
+    border:none;
+    border-radius: 10px;
+    background-color: #4f46e5;
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.send-icon{
+    font-weight: 600px;
+    color: #ffffff;
+}
+
+.cv-submit-footer:hover{
+    background-color: #4338ca;
+}

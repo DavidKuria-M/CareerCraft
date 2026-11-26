@@ -1,0 +1,84 @@
+.top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 14px 24px;
+    background-color: #f8fafc; /* change the background color*/
+}
+
+.search-bar{
+    flex: 1;
+    max-width: 780px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 16px;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+}
+
+.search-bar:focus-within{
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99,102,241,0.41);
+}
+
+.search-icon{
+    color: #64748b;
+    flex-shrink: 0;
+}
+
+.search-input{
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 0.95rem;
+    font-family: inherit;
+    color: #0f172a;
+}
+
+.search-input::placeholder{
+    color: #94a3b8;
+}
+
+.top-bar-actions{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.bell-btn{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    color: #1e293b;
+    cursor: pointer;
+    padding: 6px;
+}
+
+/*Skipping the notification dot*/
+.sign-in-btn{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 16px;
+    border-radius: 10px;
+    border: 1px solid #c7d2fe;
+    background-color: #ffffff;
+    color: #4f46e5;
+    font-size: 0.88rem;
+    font-weight: 600;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.sign-out-btn:hover{
+    background-color: #eef2ff;
+}
