@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CareerCraft</title>
+
+    <script>
+        (function (){
+          var redirectPath = sessionStorage.getItem('spa_redirect_path');
+          if(redirectPath){
+            sessionStorage.removeItem('spa_redirect_path');
+            var currentDir = window.location.pathname.replace(/\/[^/]*$/,'/');
+            var target = currentDir.replace(/\/$/,'') + (redirectPath === '/' ?'/' : redirectPath);
+            window.history.replaceState(null,'',target);
+          }
+        })();
+    </script>
+    <script type="module" crossorigin src="/CareerCraft/assets/index-B-3RKk6a.js"></script>
+    <link rel="stylesheet" crossorigin href="/CareerCraft/assets/index-BJnzWoia.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
